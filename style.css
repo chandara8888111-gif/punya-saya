@@ -1,0 +1,113 @@
+/* Gaya umum */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f0f4ff, #e4f1ff);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("chan (2).jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Container utama */
+.container {
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container p, .container h1, .container h2, .containerh3, .containerh4 {
+  color: #f4efef;
+}
+
+/* Header */
+header .profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 4px solid #a2c2ff;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #faf8f8;
+}
+
+.tagline {
+  color: #777;
+  font-weight: 300;
+}
+
+/* Bagian konten */
+section {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+section h2 {
+  color: #4c5eff;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+section p {
+  line-height: 1.6;
+  color: #eeecec;
+}
+
+/* Skill list */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill {
+  background: #edf1ff;
+  color: #4c5eff;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill:hover {
+  background: #4c5eff;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
